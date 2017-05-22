@@ -1,0 +1,314 @@
+
+@media only screen and (max-width: 1024px) {
+header .main-header, .top-container, .content-body, footer .footer-content, footer .nav-link {
+	width: 100%;
+}
+.footer-content {
+	height: auto;
+	background-size: cover;
+}
+.footer-content summary {
+	display: block;
+	float: none;
+	margin: 15px 15px 0 230px;
+	width: auto;
+	padding-bottom: 15px;
+}
+footer .footer-nav {
+	padding-right: 15px;
+}
+}
+
+@media only screen and (max-width: 1019px) {
+.content-body {
+	margin: 11px auto 0;
+}
+.inner-container aside.side-content .link-box:last-child {
+	float: left;
+	margin-left: 338px;
+}
+}
+
+@media only screen and (max-width: 960px) {
+.social-media {
+	float: right;
+	margin-bottom: 10px;
+}
+.social-search {
+	top: 42px;
+}
+.social-search .search {
+	clear: both;
+}
+}
+
+@media only screen and (max-width: 770px) {
+.logo {
+	float: left;
+	width: 388px;
+}
+.logo img {
+	width: 100%;
+}
+.slide-banner ul li a img {
+	position: relative;
+	left: -65px;
+}
+.carousel-indicators {
+	bottom: 11px;
+}
+aside.side-content {
+	margin-right: 20px;
+}
+.event-container {
+	margin-left: 20px;
+	margin-right: 361px;
+}
+}
+
+@media only screen and (max-width: 700px) {
+header .main-header {
+	height: 222px;
+	padding-top: 20px;
+}
+header .main-header {
+	background: url("../images/responsivebg.png");
+}
+.logo {
+	float: none;
+	margin: 0 auto;
+	width: 388px;
+}
+.top-nav {
+	position: static;
+	width: 100%;
+	text-align: center;
+}
+.top-nav a:last-child {
+	padding-right: 0px;
+}
+.social-search {
+	margin: 0 auto;
+	position: static;
+	margin-top: 20px;
+	width: 448px;
+}
+.social-search .search {
+	clear: none;
+}
+.link-box a {
+	font-size: 14px;
+	padding: 0 23px 0 81px;
+	width: 290px;
+}
+.inner-container aside.side-content .link-box:last-child {
+	margin-left: 310px;
+}
+.inner-details {
+	border-bottom: 1px solid #fff;
+}
+}
+
+@media only screen and (max-width: 640px) {
+.slide-banner {
+	display: none;
+}
+.top-container nav {
+	width: auto;
+	float: none;
+}
+.top-container {
+	padding: 7px 15px;
+	height: auto;
+}
+.top-container nav li {
+	width: 100%;
+	position: relative;
+	background-image: none;
+}
+.top-container nav li:after {
+
+	content: url(../images/bullet_v.png);
+	position:absolute;
+	right: 10px;
+    top: 9px;
+	 pointer-events: none;
+}
+.top-container nav li a {
+	width: 100%;
+	display: block;
+	line-height: 47px;
+	font-size: 10.5px;
+	padding-left: 10px;
+	padding-right: 32px;
+}
+/*Responsive Flyout Nav*/
+
+.top-container nav li ul {
+	position: static;
+}
+.top-container nav li ul:before {
+	background-color: none;
+	position: static;
+}
+.top-container nav li li:after {
+	content: " hello";
+}
+.top-container nav li ul li {
+	width: 100%;
+}
+/*Responsive Flyout Nav Close*/
+.event-container {
+	width: 100%;
+	margin: 0;
+	padding: 0 20px;
+}
+aside.side-content {
+	clear: both;
+	margin: 20px auto 0;
+	position: static;
+}
+.footer-content summary {
+	display: block;
+	font-size: 8px;
+	margin: 10px 10px 0;
+	width: auto;
+}
+.footer-logo {
+	float: none;
+	margin: 0 auto;
+	width: 197px;
+}
+.footer-content summary p {
+	font-size: 9px;
+}
+.inner-container aside.side-content {
+	position: static;
+	width: 300px;
+}
+.inner-container aside.side-content .link-box:last-child {
+	margin-left: 0;
+}
+.content-left .ads {
+	display: none;
+}
+.inner-container .related-links {
+	float: none;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.inner-container .page-summary {
+	margin-left: 0;
+}
+.footer-content {
+	background-size: cover;
+}
+}
+
+@media only screen and (max-width: 500px) {
+footer .nav-link {
+	position: relative;
+	top: -65px;
+	width: 166px;
+}
+.footer-logo {
+	margin: -31px auto 0;
+}
+footer .footer-nav {
+	position: relative;
+}
+.find-credit-location {
+	margin: 0 auto;
+	position: relative;
+	top: -51px;
+	width: 230px;
+}
+.find-credit-location a {
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 56px;
+}
+.find-credit-location a:before {
+	content: url("../images/pointer-icon_small.png");
+	left: 20px;
+	position: absolute;
+	top: -28px;
+}
+}
+
+@media only screen and (max-width: 460px) {
+.search input[type="text"] {
+	width: 127px;
+}
+.social-search {
+	width: 373px;
+}
+.social-search .search {
+	width: 220px;
+}
+}
+
+@media only screen and (max-width: 400px) {
+.logo {
+	width: 259px;
+}
+header .main-header {
+	height: 130px;
+	padding-top: 0px;
+}
+.social-search {
+	margin-top: 8px;
+}
+.top-nav {
+	margin-top: 4px;
+}
+.social-search {
+	width: 298px;
+}
+.search label {
+	font-size: 10px;
+	padding: 0 5px;
+	line-height: 24px;
+	float: left;
+}
+.social-search .search-btn {
+	height: 16px;
+	width: 16px;
+	margin-right: 3px;
+	background-size: 100% 100%;
+	background-position: 0;
+	margin-top: 3px;
+}
+.social-media a {
+	width: 24px;
+	height: 24px;
+}
+.social-media a img {
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+.search input[type="text"] {
+	width: 120px;
+	height: 16px;
+	float: left;
+	margin-top: 4px;
+}
+.social-search .search {
+	height: 24px;
+	line-height: 24px;
+	width: 193px;
+}
+.link-box a {
+	width: 290px;
+}
+aside.side-content {
+	width: 290px;
+}
+.side-content .ads {
+	width: 290px;
+}
+.side-content .ads img {
+	width: 100%;
+}
+}

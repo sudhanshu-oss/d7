@@ -1,0 +1,26 @@
+<?php
+
+/*
+ * implements hook_menu();
+ */
+function magic_menu_menu(){
+    $items['mytest'] = array(
+        'title' => 'my test',
+        'description' => 'my test desc',
+        'page callback' => 'magic_menu_mytest',
+        'access arguments' => array('access content'),
+        
+    );
+    return $items;
+    
+}
+
+function magic_menu_mytest(){
+    $content = array(
+        '#markup' => 'Hi this is my test',
+        
+    );
+    
+    return $content;
+    
+}

@@ -1,0 +1,33 @@
+name = robot
+description = A Custom theme.
+package = Core
+version = VERSION
+core = 7.x
+
+;CSS
+
+stylesheets[all][] = css/960.css
+stylesheets[all][] = css/main.css
+stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/screen.css
+
+;Javascript
+
+scripts[] = js/jquery.autofill.js
+scripts[] = js/javascript.js
+
+
+
+; Regions
+
+regions[header] = Header
+regions[content] = Content
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+regions[footer_left] = Footer left
+regions[footer_right] = Footer right
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[help] = Help
+
+

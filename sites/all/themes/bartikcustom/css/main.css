@@ -1,0 +1,2476 @@
+/* @group reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+/* remember to define focus styles! */
+:focus {outline: 0;}
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: collapse;border-spacing: 0;}
+/* @end */
+/* @group clearfix **/
+/*inline clearing div*/
+.clear {overflow: hidden;clear:both;height:0;margin:0;font-size: 1px;line-height: 0;}
+/*clearing class*/
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+/* @end */
+/* @group other */
+/*  non-sematic float stuff */
+.right {float: right;}
+.left {float: left;}
+.wrapper {margin-left:auto;margin-right:auto;}
+/* default menu and list stuff */
+ul.menu, ul.menu ul, ul.clean, #content ul.menu, #content ul.menu ul, #content ul.clean {list-style-type: none;}
+button { /* ie fix stuff */ width: auto; overflow: visible; border:0; margin:0; padding:0;}
+.none {display: none;}
+sup { vertical-align: super; font-size: .76em; }
+
+a, a:link, a:visited {
+	text-decoration: none;
+	color: #258CD4;
+}
+a:hover, a:active {
+	color: #a30d25;
+}
+sup {
+    font-size: .85em;
+    line-height: .85em;
+}
+.center {
+    margin:0 auto;
+    text-align:center;
+}
+    
+/* @end */
+
+/* check special.css for page specific images, CTAs, touts, etc */
+
+span.brand_header {
+	font-weight:bold;
+}
+
+span.brand {
+	font-weight:bold;
+}
+
+body {
+	background:#eadcbc url(../images/body-bg.jpg) no-repeat center top;
+	font:62.5% Arial, Helvetica, Geneva, sans-serif;
+	text-align: center;
+	color: #333333;
+}
+
+div.wrapper {
+	width: 976px;
+	text-align: left;
+	/*background: transparent url(../images/wrapper-content-bg.png) repeat-y 0 0;*/
+	position: relative;
+	padding-top: 131px;
+}
+
+#header {
+	width: 976px;
+	height: 153px;
+	background:transparent url(../images/header-bg.png) no-repeat 0 8px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+#stage {
+	width: 950px;
+	background: transparent url(../images/stage-bg.png) repeat-y 0 0;
+	position: relative;
+	padding: 5px 19px 20px 7px;
+	min-height:400px;
+}
+    body.recipes #stage, 
+    body.recipebox #stage, 
+    body.searchresults #stage {
+        min-height:650px;
+    }
+
+#footer {
+	width: 976;
+	height: 125px;
+	background:transparent url(/UI/images/footer-bg.png) no-repeat 0 -15px;
+}
+
+/* start the big stuff */
+
+
+/* @group header parts */
+
+#usermeta {
+	position: absolute;
+	top: 5px;
+	left: 0;
+}
+
+#usermeta #welcome {
+	width: 140px;
+	text-align: right;
+	color: #a30d25;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	padding: 4px 5px 0 0;
+}
+
+#usermeta .login {
+	width: 63px;
+	height:31px;
+	padding: 4px 0 0 5px;
+	background: transparent url(../images/utility-left-bg.png) no-repeat 0 0;
+}
+
+#usermeta .login a {
+	display: block;
+	width: 53px;
+	height:18px;
+	background:transparent url(../images/utility-left-bg.png) no-repeat -5px -4px;
+	text-indent: -9999px;
+}
+#usermeta .logout {
+	width: 63px;
+	height:31px;
+	padding: 4px 0 0 5px;
+	background: transparent url(../images/utility-left-bg.png) no-repeat 0 0;
+}
+
+#usermeta .logout a {
+	display: block;
+	width: 73px;
+	height:18px;
+	background:transparent url(../images/utility-left-bg.png) no-repeat -5px -4px;
+	text-indent: -9999px;
+}
+
+#usermeta #login_logout.in a {
+	background:transparent url(../images/utility-left-bg.png) no-repeat -67px -4px;
+}
+
+#usermeta #sign_up {
+	width: 76px;
+	height:31px;
+	padding: 4px 0 0 5px;
+	background: transparent url(../images/utility-left-bg.png) no-repeat -218px 0px;
+	position:relative;
+	margin-left:-10px;
+}
+
+#usermeta #sign_up a {
+	display: block;
+	width: 67px;
+	height:18px;
+	background: transparent url(../images/utility-left-bg.png) no-repeat -223px -4px;
+	text-indent: -9999px;
+}
+
+#usermeta #my_profile {
+	width: 76px;
+	height:31px;
+	padding: 4px 0 0 5px;
+	background: transparent url(../images/utility-left-bg.png) no-repeat -138px 0;
+	position:relative;
+	margin-left:0px;
+}
+
+#usermeta #my_profile a {
+	display: block;
+	width: 67px;
+	height:18px;
+	background: transparent url(../images/utility-left-bg.png) no-repeat -143px -4px;
+	text-indent: -9999px;
+}
+
+#utility {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 354px;
+	height: 43px;
+	background: transparent url(../images/utility-right-bg.png) no-repeat 0 0;
+}
+#utility #my_recipe_box a{
+	display: block;
+	width: 122px;
+	height: 27px;
+	margin: 0 0 0 9px;
+	background:transparent url(../images/utility-right-bg.png) no-repeat -9px 0;
+	text-indent: -9999px;
+}
+#utility #where_to_buy a{
+	display: block;
+	width: 103px;
+	height: 27px;
+	background:transparent url(../images/utility-right-bg.png) no-repeat -131px 0;
+	text-indent: -9999px;
+}
+#utility #contact_us a{
+	display: block;
+	width: 101px;
+	height: 27px;
+	background:transparent url(../images/utility-right-bg.png) no-repeat -234px 0;
+	text-indent: -9999px;
+}
+#navigation {
+	position: absolute;
+	bottom: 22px;
+	left: 0;
+}
+#navigation li a {
+	text-indent:-9999px;
+	height: 44px;
+	display: block;
+}
+
+#navigation #home a{
+	position: absolute;
+	bottom: 0;
+	left: 343px;
+	width: 280px;
+	height: 124px;
+}
+
+#navigation #recipes a{
+	position: absolute;
+	bottom: 0;
+	left: 6px;
+	width: 134px;
+	background:url(../images/header-bg.png) no-repeat -6px -32px;
+}
+#navigation #recipes a:hover,
+body.recipes #navigation #recipes a {
+	background:url(../images/header-bg.png) no-repeat -6px bottom;
+}
+
+#navigation #products a{
+	position: absolute;
+	bottom: 0;
+	left: 140px;
+	width: 137px;
+	background:url(../images/header-bg.png) no-repeat -140px -32px;
+}
+#navigation #products a:hover,
+body.products #navigation #products a {
+	background:url(../images/header-bg.png) no-repeat -140px bottom;
+}
+
+#navigation #idea_center a{
+	position: absolute;
+	bottom: 0;
+	left: 679px;
+	width: 155px;
+	background:url(../images/header-bg.png) no-repeat -679px -32px;
+}
+#navigation #idea_center a:hover,
+body.idea_center #navigation #idea_center a {
+	background:url(../images/header-bg.png) no-repeat -679px bottom;
+}
+
+#navigation #history a{
+	position: absolute;
+	bottom: 0;
+	left: 834px;
+	width: 124px;
+	background:url(../images/header-bg.png) no-repeat -834px -32px;
+}
+#navigation #history a:hover,
+body.history #navigation #history a {
+	background:url(../images/header-bg.png) no-repeat -834px bottom;
+}
+
+/* @end */
+
+
+/* @group stage parts */
+#backtrack {
+	position: absolute;
+	top: 5px;
+	left: 7px;
+	width: 950px;
+	height: 21px;
+	background: transparent url(../images/content-backtrack-bg.png) 0 0 no-repeat;
+	color: #333;
+	z-index: 1150;
+	overflow: hidden;
+	padding-top:5px;
+}
+
+#banner {
+	width: 950px;
+	height: 26px;
+	background: #fff;
+	display: inline-block;
+}
+
+#content {
+	width: 675px;
+	background: transparent url(../images/content-bg.png) repeat-x 0 0;
+	display: inline-block;
+	padding: 17px 25px 36px 250px;
+	position: relative;
+}
+body.home #content {
+	background-image: none;
+	width: 914px;
+	padding-left: 18px;
+	padding-right: 18px;
+	padding-bottom:0;
+}
+body.recipes #content,
+body.idea_center #content {
+	min-height:750px;
+} *html body.recipes #content,
+  *html body.idea_center #content {
+	height:750px;
+}
+body.recipes #content div#nutrition-info
+{
+    margin-top: 10px
+}
+#sidebar {
+	position: absolute;
+	top: 45px;
+	left: 28px;
+	width: 202px;
+	background: transparent url(../images/sidenav-bg-top.png) no-repeat 3px 0;
+	padding-top: 5px;
+}
+
+/* @group sidebar stuff */
+
+#sidebar div.bw {
+	padding-bottom: 6px;
+	background:transparent url(../images/sidenav-bg-lower.png) no-repeat 3px bottom;
+    background-color:White;
+}
+body.home #sidebar div.bw {
+	padding-bottom: 4px;
+	background:transparent url(../images/sidenav-bg-bottom.png) no-repeat 3px bottom;
+}
+*html body.legal #sidebar div.bw {
+	padding-bottom: 0;
+	background:transparent url(../images/sidenav-bg-bottom.png) no-repeat 3px bottom;
+}
+
+#sidebar div.tw {
+	width: 194px;
+	padding-left: 8px;
+	background: transparent url(../images/sidenav-bg-middle.png) repeat-y 3px 0;
+	padding-top: 90px;	
+}
+
+
+/* GSA search box July 2010 */
+
+
+#gsa-search {
+	width: 188px;
+	height: 90px;
+	background: url(../images/sidenav-search-bg.png) no-repeat 0 0;
+	position: absolute;
+	top: 181px;
+	left: 36px;
+	z-index: 1001;
+}
+#gsa-search fieldset {
+	margin:0px;
+	padding:0px;
+	border:none;
+}
+#gsa-search h2 {
+	height: 45px;
+	text-indent: -9999px;
+}
+#gsa-search #GSA_txtSearch{
+	margin-left:10px;
+	font-size:11px;
+	float:left;
+	display:inline;
+	width:105px;
+	height: 18px;
+	padding-left: 2px;
+}
+
+#GSA_btnSearch {
+    float:left;
+    display:inline;
+    margin-left:5px;
+    width:auto;
+    margin-bottom:0;
+    cursor: pointer;
+}
+
+#GSA_advSearch {
+	width:auto;
+	margin-bottom:0;
+	clear:both;
+	margin-top:3px;
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+#search_recipes ul li {
+    float:left;
+    display:inline;
+    padding-right:5px;
+    min-height:1em;
+}
+#search_recipes ul li.last {
+    border-left:0;
+    padding-left:5px;
+    border-left:1px solid #ccc;
+}
+
+
+
+
+
+
+
+#personalized_search {
+	width: 188px;
+	height: 35px;
+	position: relative;
+	margin-top: 5px;
+}
+#personalized_search a {
+	position: absolute;
+	top:0;left:0;
+	width: 188px;
+	height: 39px;
+	background: url(../images/sidenav-cta-personalized_search.png) no-repeat 0 0;
+	text-indent: -9999px;
+}
+
+div.contextual_menu {
+	width: 188px;
+	background:url(../images/sidenav-menu-recipe.png) repeat-x 0 0;
+	margin-top: 2px;
+}
+div.contextual_menu h1 {
+	font-size:12px;
+	line-height: 14px;
+	font-weight:normal;
+	font-style:normal;
+	padding: 20px 5px 6px 5px;
+	margin: 0 5px 6px 5px;
+	border-bottom:2px solid #c6dded;
+	color: #000;
+}
+div.contextual_menu ul {
+	padding: 0;
+	margin: 0;
+}
+div.contextual_menu ul li {
+	padding: 0 4px 0 4px;
+	margin: 0;
+	border: none;
+}
+div.contextual_menu ul li a {
+	display: block;
+	font-size:12px;
+	height: 14px;
+	line-height: 14px;
+	font-weight:normal;
+	font-style:normal;
+	padding: 1px 8px 2px 8px;
+	margin: 0 2px 3px 2px;
+	border-bottom:1px solid #ececec;
+}
+div.contextual_menu ul li.last a {
+	border-bottom:none;
+}
+div.contextual_menu ul li.active a {
+	font-weight:bold;
+}
+div.contextual_menu ul#submenu li a {
+	color:#004B8D;
+	font-weight:normal;
+	border:none;
+	background:url(/UI/images/submenu_arrow.gif) no-repeat 13px 6px;
+	padding-left:24px;
+}
+div.contextual_menu ul#submenu li a:hover {
+	color: #a30d25;
+}
+	div.contextual_menu ul#submenu li.active a {
+		font-weight:bold;
+		background:url(/UI/images/submenu_arrow_on.gif) no-repeat 13px 6px;
+	}
+	
+
+#side_recipe_club {
+	margin-top: 14px;
+	margin-left:-6px;
+	width: 202px;
+	height: 168px;
+	background: url(../images/sidenav-cta-recipe_club.png) no-repeat 0 0;
+}
+#side_recipe_club div.cta_link_login a {
+	top: 122px;
+	left: 82px;
+	width: 40px;
+	height: 15px;
+}
+#side_signature_recipe {
+	margin-top: 14px;
+	margin-left:8px;
+	width: 188px;
+	height: 324px;
+	background: url(../images/sidenav-cta-signature-recipe-contest.jpg) no-repeat 0 0;
+}
+
+.officialrules_leftNav 
+{
+	width: 105px;
+	height: 15px;
+	top: 190px;
+	left: 35px;
+	position: absolute;
+	overflow: hidden;
+	}
+
+#side_where_to_buy {
+	margin-top: 14px;
+	margin-left:-1px;
+	width: 199px;
+	height: 131px;
+	background: url(../images/sidenav-cta-where_to_buy.png) no-repeat 0 0;
+}
+#side_where_to_buy div.cta_link_find a {
+	top: 74px;
+	left: 83px;
+	width: 96px;
+	height: 19px;
+}
+
+body.home div.contextual_menu {
+	display: none;
+}
+
+
+/* @end */
+
+/* @end */
+
+/* @group content area scenarios */
+
+#content h1 {
+	font-size: 2.4em;
+	line-height: 1.5em;
+	font-weight: lighter;
+	font-style: normal;
+	text-transform: capitalize;
+	color: #333;
+	border-bottom: 2px solid #004b8e;
+	margin: 0 0 18px 10px;
+}
+
+#content h2 {
+	font-size:1.4em;
+	line-height: 1.0em;
+	font-weight:bold;
+	font-style:normal;
+	color: #333;
+	padding: 0.24em 0 0.1em 0;
+	margin: 0 0 0 10px;
+}
+
+#content p {
+    font-size: 1.2em;
+    line-height: 1.21em;
+    color: #4a4a4a;
+    margin: 0 0 1.2em 10px;
+}
+#content ul,
+#content dl {
+	font-size:1.2em;
+	line-height: 1.21em;
+	color:#4a4a4a;
+	margin: 0 0 0.5em 10px;
+}
+
+/* @group recipe/result matrix */
+
+table.result_matrix {
+	border-collapse: collapse;
+	font-size: 120%;
+	margin: 0 0 15px 10px;
+}
+table.result_matrix,
+ul.result_matrix {
+	width: 695px;
+	display: inline-block;
+	padding: 0.8em 0 0 0;
+}
+table.result_matrix td {
+	padding-top: 10px;
+	background: url(../images/recipe_divider.gif) no-repeat bottom left;
+	vertical-align: top;
+}
+td .recipe,
+li.recipe {
+	font-size: 0.8em;
+	float: left;
+	width: 315px;
+	min-height: 112px;
+	margin: 0 20px 10px 0;
+	padding: 0 0 10px 0;
+	display: inline-block;
+	border-bottom:1px solid #cfcfcf;
+} *html td .recipe {
+	height: 112px;
+} *html li.recipe {
+	height: 112px;
+}
+td .recipe {
+	border: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+td .recipe div.image,
+li.recipe div.image {
+	width: 108px;
+	height: 111px;
+	float: left;
+	margin-right: 10px;
+	padding: 5px 0 0 8px;
+	background: url(../images/content-recipes-results-img-bg.png) no-repeat 0 0;
+}
+td .recipe div.image {
+	padding-bottom: 7px;
+	float: left;
+	display: inherit;
+	width: 106px;
+	margin-right: 0;
+}
+#content td .recipe dl {
+	float: left;
+	display: inline;
+	width: 189px;
+	vertical-align: top;
+} *+html #content td .recipe dl {
+	padding-bottom: 7px;
+}
+td .recipe dt,
+li.recipe dt {
+	font-size: 1.2em;
+	line-height: 1.2em;
+	padding-bottom: 0.3em;
+	color: #000;
+}
+td .recipe dd,
+li.recipe dd {
+	font-size: 0.8em;
+	line-height: 1.2em;
+	padding-left: 0;
+}
+	body.recipes #featured-recipes li.recipe dd {
+		margin-left: 116px;
+	}	
+#content td .recipe dd ul,
+#content li.recipe dd ul {
+	margin-left: 0;	
+}
+
+#content td .recipe dd img.bakeoff-logo {
+	display:block;
+	margin:-1px 0 4px 0;
+}
+
+div.pager {
+	margin-left: 10px;
+	text-align: right;
+}
+
+/* @end */
+
+/* @group recipe detail */
+body.detail #content h1 {
+	margin-bottom:0;
+}
+
+body.detail #details {
+	margin-bottom: 20px;
+	padding-bottom:10px;
+	position:relative;
+	padding-left:10px;
+	margin-top:25px;
+} *+html body.detail #details {
+	margin-top:28px;
+} *html body.detail #details {
+	margin-top:28px;
+}
+
+#details strong {
+	display: inline-block;
+	width: 100px;
+}
+
+#details div.recipe_image {
+	float: left;
+	background: url(../images/content-recipes-detail-img-bg.png) no-repeat 0 0;
+	width: 309px;
+	height: 312px;
+	padding: 6px 0 0 9px;
+	margin-right: 37px;
+	margin-left:-10px;
+}
+
+body.detail #ingredients,
+body.detail #instructions {
+	width: 319px;
+	float: left;
+	padding-bottom: 20px;
+}
+
+body.detail #ingredients {
+    margin-right:28px;
+}
+
+#ingredients ul li,
+#instructions ul li {
+	padding: 0 0 8px 16px;
+	background:url(../images/li-arrow-grey.png) no-repeat 2px 4px;
+}
+
+#instructions ul li.heading, #ingredients ul li.heading {
+	font-weight:bold;
+	padding-left:0;
+	background:none;
+}
+
+#nutritional {
+	font-size: 0.8em;
+	margin-top:15px;
+}
+#tools {
+    position:absolute;
+    bottom:11px;
+    right:0;
+    width:297px; /* 319 before padding */
+    background:url("../images/bg_recipetools.jpg") no-repeat top left;
+    min-height:62px; /* 83px before padding */
+    padding:13px 13px 0 9px;
+}
+body.detail #details ul.detailtext {
+    float:left;
+    display:inline;
+    width:319px;
+    margin-left:0;
+}
+body.detail #details #bakeoff-details {
+		float:left;
+		display:inline;
+		width:319px;
+		margin:30px auto 0 auto;
+		text-align:center;
+		font-size:0.9em;
+}
+	body.detail #details #bakeoff-details p {
+		margin:5px 0 0 0;
+	}
+.recipes #content #tools h2,
+.recipes #content #tools ul {
+    margin-left:0;
+}
+.recipes #content #tools h2 {
+    font-size:1.2em;
+    font-weight:normal;
+    border-color:#c3d2eb;
+    padding-left:5px;
+}
+#tools ul li {
+    float:left;
+    display:inline;
+    height:1.6em;
+    width:48%;
+    padding-left:5px;
+}
+#tools a {
+    padding-left:22px;
+}
+    #tools a.printrecipe {
+        background:url("../images/icon_printrecipe.gif") no-repeat top left;
+    }
+    #tools a.emailfriend {
+        background:url("../images/icon_emailrecipe.gif") no-repeat top left;
+    }
+    #tools a.addtorecipebox {
+        background:url("../images/icon_addtorecipebox.gif") no-repeat top left;
+    }
+
+/* @end */
+
+/* @group advanced search */
+fieldset.search {
+	font-size: 1em;
+	margin: 0 0 0.9em 10px;
+}
+fieldset.column {
+	float: left;
+	width: 230px;
+	display:inline;
+}
+fieldset.narrow {
+	margin: 0 20px 0 20px;
+	width: 130px;
+}
+fieldset.search legend {
+	font-size:1.4em;
+	line-height: 1.0em;
+	font-weight:bold;
+	font-style:normal;
+	color: #333;
+	
+}
+    fieldset.search legend span {
+        border-bottom:2px solid #c4c4c4;
+	    padding: 0.22em 0 0.37em 0;
+	    margin: 0 0 0.44em 0;
+	    display: block;
+	    width: 230px;
+    }
+        *+html fieldset.search legend span {
+            margin-left:-10px;
+        }
+    fieldset.narrow legend span {
+        width: 130px;
+    }
+
+fieldset.top {
+    background:url("/UI/images/bg_advancedsearch.jpg") no-repeat top left;
+    padding:8px 15px 7px 15px;
+}
+fieldset.top * {
+    vertical-align:middle;
+}
+fieldset.top input {
+    margin-top:0;
+}
+fieldset.top label {
+    margin-right:10px;
+}
+fieldset.top input.text {
+    width:301px;
+    padding:1px 2px 2px 2px;
+    font-size:10px;
+    
+}
+fieldset.top input.searchbutton {
+    margin-right:20px;
+}
+#content fieldset.search ul {
+    margin-left:0;
+}
+    #content fieldset.search ul ul {
+        margin-left:15px;
+    }
+fieldset.search ul li label {
+    font-weight:bold;
+}  
+fieldset.search ul li ul li label,
+fieldset.time ul li label {
+    font-weight:normal;
+}
+fieldset.search ul li {
+    margin-bottom:10px;
+    clear:left;
+}
+    fieldset.search ul li ul {
+        padding-top:5px;
+    }
+        fieldset.search ul li ul li {
+            font-size:.8em;
+            float:left;
+            height:1em;
+            width:48%;
+            padding-right:2%;
+            clear:none;
+        }
+        
+fieldset.search table {
+    font-size:1.2em;
+}
+    fieldset.search table td {
+        padding-bottom:10px;
+    }
+fieldset.time ul li label {
+    display:block;
+    float:left;
+    width:90px;
+}
+fieldset.time ul li select {
+    margin-right:10px;
+}
+
+
+/* @end */
+#content div#expansion_list {
+    margin:1.2em 0 4px 10px;
+}
+    body.faq #content div#expansion_list {
+        margin-top:45px;
+    }
+
+#content div#expansion_list dl
+{
+	width:663px;
+	margin:0;
+	padding:0;
+}
+    
+#content div#expansion_list dl dt {
+	padding: 6px 28px 6px 28px;
+	margin: 0 0 4px 0;
+	cursor: pointer;
+	color: #258cd4;
+	font-weight: bold;
+	font-size: 1em;
+	max-height:13px;
+}
+    body.faq #content div#expansion_list dl dt {
+        max-height:400px;
+        padding:0;
+    }
+    body.faq #content div#expansion_list dl dt span.inner {
+        max-height:auto;
+        padding: 6px 28px 6px 28px;
+    }
+#content div#expansion_list dl dt {
+	background: url(/UI/images/reveal_closed_odd.gif) no-repeat top left #f7f7fa;
+}
+    body.faq #content div#expansion_list dl dt {
+	    background: url(/UI/images/reveal_top_hiding_bg.gif) no-repeat top left #f7f7fa;
+    }
+    body.faq #content div#expansion_list dl dt span.inner {
+	    display:block;
+	    background: url(/UI/images/reveal_bottom_bg.gif) no-repeat top left;
+    }
+#content div#expansion_list dl.even dt {
+	background: url(/UI/images/reveal_closed_even.gif) no-repeat top left #eaebf1;
+}
+    body.faq #content div#expansion_list dl.even dt {
+	    background: url(/UI/images/reveal_top_hiding_bg_even.gif) no-repeat top left #eaebf1;
+    }
+    body.faq #content div#expansion_list dl.even dt span.inner {
+	    display:block;
+	    background: url(/UI/images/reveal_bottom_bg_even.gif) no-repeat bottom left;
+    }
+#content div#expansion_list dl dt.ui-state-active {
+	background: url(/UI/images/reveal_open_odd.gif) no-repeat top left #f7f7fa;
+	max-height:auto;
+	margin-bottom:0;
+}
+#content div#expansion_list dl.even dt.ui-state-active {
+	background: url(/UI/images/reveal_open_even.gif) no-repeat top left #eaebf1;
+}
+
+#content div#expansion_list dl dd {
+	padding: 0 28px 1px 28px;
+	margin: 0 0 4px 0;
+	color: #656565;
+	font-size: 0.9em;
+	background: url(/UI/images/reveal_bottom_bg.gif) no-repeat bottom left #F7F7FA;
+	zoom:1;
+	overflow:hidden;
+}
+#content div#expansion_list dl.even dd {
+	background: url(/UI/images/reveal_bottom_bg_even.gif) no-repeat bottom left #EAEBF1;
+}
+#content div#expansion_list dd ul {
+	list-style-type:none;
+	margin-left:0;
+}
+    #content div#expansion_list dd ul li {
+        padding: 0 0 8px 16px;
+	    background:url(../images/li-arrow-grey-trans.png) no-repeat 2px 4px;
+	    overflow:auto;
+    }
+
+#content div#expansion_list dd img {
+	float:left;
+	margin:5px 10px 0 0;
+}
+#content div#expansion_list dt.start {
+	margin-top:19px;
+}
+
+#content div#expansion_list dd p {
+	margin-left: 0;
+	margin-right: 0;
+}
+#content div#expansion_list dt.ui-state-active {
+	cursor:text;
+}
+#content div#expansion_list dt.ui-state-default {
+	cursor:pointer;
+}
+
+
+#topten {
+	float: right;
+	display:inline;
+	width: 165px;
+}
+#topten dl {
+	background:url(/UI/images/topten_bg.gif) repeat-y top left;
+	padding:0 3px 0 3px;
+	margin:0;
+}
+#topten dt {
+	color:#4C99CF;
+	padding:6px 7px 4px 20px;
+	margin:0 3px 0 4px;
+	border-top:#D4D4D4 1px solid;
+	background:url(/UI/images/topten_arrow.gif) no-repeat 7px 9px;
+}
+	#topten dt.first {
+		border-top:none;
+	}
+	#topten dt.ui-state-active {
+		font-weight:bold;
+		background:url(/UI/images/topten_arrow_active.gif) no-repeat 7px 9px;
+		cursor:text;
+	}
+	#topten dt.ui-state-default {
+		cursor:pointer;
+	}
+#topten dd {
+	margin:0 0 -3px 0;
+}
+
+#new_and_improved {
+	float: right;
+	display:inline;
+	width: 160px;
+}
+
+body.home #content h1,
+body.home #content h2 {
+	border-bottom: none;
+}
+
+
+/* @end */
+
+
+/* @group list stuff */
+
+#header ul.menu li,
+#backtrack li,
+#footer ul li {
+	float: left;
+}
+
+#header ul.menu li a,
+#footer ul li a {
+	display: block;
+}
+
+/* BreadCrumbs */
+#backtrack span.menu {
+	font-size: 1.1em;
+	line-height: 1.2em;
+	padding: 0.5em 0 0 37px;
+}
+#backtrack span {
+	font-weight:bold;
+	margin:0 2px;
+}
+#backtrack span a {
+	display: inline-block;
+	font-weight:normal;
+	color:#5DA3D4;
+}
+
+/* @end */
+
+/* @group footer stuff */
+
+#footer ul{
+	padding: 17px 0 0 23px;
+	font:11px Arial, Helvetica, Geneva, sans-serif;
+}
+#footer a {
+	line-height: 1em;
+	height: 15px;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+#footer #rss a {
+	width: 49px;
+}
+#footer #rss a:hover {
+	background: transparent url(../images/footer-bg.png) no-repeat -23px 0;
+}
+#footer #newsletter_sign_up a {
+	width: 125px;
+}
+#footer #newsletter_sign_up a:hover {
+	background: transparent url(../images/footer-bg.png) no-repeat -23px 0;
+}
+#footer #newsletter_sign_up {
+    margin-right:310px;
+}
+#footer #disclosure a {
+	width: 180px;
+}
+#footer #terms a {
+	width:86px;
+}
+#footer #careers a {
+	width:59px;
+}
+#footer #sitemap a {
+	width:64px;
+}
+#footer #privacy_policy a {
+	width:91px;
+}
+#footer #pofm a {
+	width:130px;
+}
+#footer #unsubscribe a {
+	width:67px;
+}
+#footer #disclosure a:hover {
+	background: transparent url(../images/footer-bg.png) no-repeat -214px -1px;
+}
+#footer #terms a:hover {
+	background: transparent url(../images/footer-bg.png) no-repeat -458px -1px;
+}
+#footer #careers a:hover {
+	background: transparent url(../images/footer-bg.png) no-repeat -544px -1px;
+}
+#footer #sitemap a:hover {
+	background: transparent url(../images/footer-bg.png) no-repeat -603px -1px;
+}
+#footer #privacy_policy a:hover {
+	background: transparent url(../images/footer-bg.png) no-repeat -667px -1px;
+}
+#footer #pofm a:hover {
+	background: transparent url(../images/footer-bg.png) no-repeat -758px -1px;
+}
+#footer #unsubscribe a:hover {
+	background: transparent url(../images/footer-bg.png) no-repeat -888px -1px;
+}
+#footer #disclosure {
+	padding: 35px 0 0 244px;
+	width: 673px;
+	text-indent: -9999px;
+	margin-bottom:3px;
+}
+
+/* @end */
+
+/* @group CTAs */
+
+div.cta {
+	overflow: hidden;
+	position: relative;
+}
+
+div.cta h2,
+div.cta h3,
+div.cta p {
+	text-indent: -9999px;
+}
+
+div.cta a {
+	display: block;
+	text-indent: -9999px;
+	position: absolute;
+	top:0; left:0;
+	width:100%;height:100%;
+}
+
+div.cta .cta_rules {
+	display: block;
+	text-indent: -9999px;
+	position: absolute;
+	top: 145px;
+    left: 13px;
+    z-index:10;
+	width:70px;
+    height:15px;
+}
+
+/* put classes on links just in case they will be needed
+div.cta_link_join a,
+div.cta_link_login a,
+div.cta_link_rss a,
+div.cta_link_learn a,
+div.cta_link_visit a 
+*/
+
+
+/* @end */
+
+/* Where to Buy product locator */
+table.productlocator {
+    margin-left:10px;
+    font-size:1.2em;
+    width:665px;
+}
+    table.productlocator td,
+    table.productlocator th {
+        border-bottom:14px solid #fff;
+    }
+    table.productlocator th {
+        color:#9d0c23;
+        font-weight:normal;
+        padding-left:8px;
+    }
+    table.productlocator td {
+        padding:8px 8px 6px 8px;
+    }
+    table.productlocator tr.odd td {
+        background-color:#f7f7fa
+    }
+    table.productlocator tr.even td {
+        background-color:#eaebf1
+    }
+.wtb_results .listcontrols {
+    margin-left:10px;
+    margin-top:10px;
+}
+.listcontrols div.printbutton {
+    float:left;
+    display:inline;
+    margin-right:60px;
+}
+img.printbutton {
+    cursor:pointer;
+}
+.listcontrols .startover {
+    float:left;
+    display:inline;
+    font-size:1.2em;
+    width:360px;
+}
+    .listcontrols .startover img {
+        vertical-align:middle;
+        margin-left:10px;
+    }
+.listcontrols .listpaging {
+    width:auto;
+    text-align:right;
+}
+.wtb_results .notonlist {
+    border-top:2px solid #d9d9d9;
+    padding-top:10px;
+    margin-top:15px;
+    margin-left:10px;
+}
+
+/* My Recipe Box */
+
+img.viewrecipebtn {
+    margin-top:4px;
+}
+a.actionremove {
+    float:left;
+    display:inline;
+    clear:both;
+    padding-right:14px;
+    background:url("/UI/images/icon_trash.gif") no-repeat top right;
+    margin-left:5px;
+    color:#258cd4;
+}
+    a.actionremove:hover {
+        text-decoration:underline;
+        color:#258cd4;
+    }
+.recipebox li.recipe {
+    height:131px;
+}
+.listcontrols {
+    padding-bottom:20px;
+}
+.listcontrols .recipeadminlinks {
+    float:right;
+    display:inline;
+}
+.listcontrols select {
+    float:left;
+    display:inline;
+    margin-left:10px
+}
+.listcontrols .listpaging {
+    float:right;
+    display:inline;
+}
+
+/* Register for Recipe Box */
+.formrow {
+	margin-bottom:10px;
+	margin-left:15px;
+	font-size:1.2em;
+}
+.formrow label {
+	float:left;
+	display:inline;
+	width:90px;
+	text-align:left;
+	margin-top:.25em;
+}
+    .formrow table td {
+        vertical-align:middle;
+    }
+    .formrow table label {
+        margin-top:0;
+        vertical-align:middle;
+    }
+    .formrow table td input {
+        margin-top:0;
+        vertical-align:middle;
+    }
+.formrow input.text {
+	float:left;
+	display:inline;
+	margin-left:10px;
+	font-size:1em;
+	padding-top:2px;
+	padding-bottom:2px;
+	width:240px;
+}
+    .formrow input.zipcode {
+        width:92px;
+    }
+.formrow select {
+	
+	position: relative;
+	left:10px;
+    top: 2px;
+}
+ .formrow textarea {
+    float:left;
+    display:inline;
+    margin-left:10px;
+ }
+.formrow span.error {
+    float:left;
+    display:inline;
+    margin-left:10px;
+    color:red;
+    margin-top:.25em;
+    width:200px;
+}
+.checkbox label {
+	float:none;
+	display:inline;
+	margin-left:3px;
+	width:auto;
+}
+.checkbox input {
+	display:inline;
+    vertical-align:middle;
+}
+div.dateofbirth {
+}
+    .dateofbirth input.dobmonth,
+    .dateofbirth input.dobday {
+        width:30px;
+    }
+    .dateofbirth input.dobyear {
+        width:45px;
+    }
+.formrow a.formhelp {
+    float:left;
+    display:inline;
+    margin-left:15px;
+    margin-top:.25em;
+}
+    .checkbox a.formhelp {
+        float:none;
+    }
+div.submit {
+    margin-top:30px;
+}
+
+/* Sign in to Your Recipe Box */
+.recipebox #content h2 {
+    border-bottom:none;
+    padding-bottom:10px;
+    margin-bottom:5px;
+}
+.recipebox .recipeboxsignin {
+    width: 410px;
+    float:left;
+    display:inline;
+}
+    .recipeboxsignin .formrow {
+        margin-left:10px;
+    }
+        .recipeboxsignin .formrow label {
+            width:89px;
+        }
+        .recipeboxsignin .formrow input.text {
+            width:200px;
+        }
+        .recipeboxsignin .formrow input.login {
+            float:left;
+            display:inline;
+            margin-left:10px;
+            margin-top:.25em;
+        }
+        .recipeboxsignin .checkbox input {
+	        display:inline;
+            vertical-align:middle;
+            margin-left:99px;
+        }
+        .recipeboxsignin .indented {
+            margin-bottom: 5px;
+            margin-left: 109px;
+            position: relative;
+            top: -4px;
+            
+        }
+            .recipeboxsignin .indented img {
+                vertical-align:middle;
+                margin-left:5px
+            }
+            .recipeboxsignin .indented a.poptrigger {
+                padding-top:5px;
+                position:relative;
+            }
+.recipebox #content .benefits {
+    margin-left:30px;
+    float:left;
+    display:inline;
+    width:210px;  /* before padding: 220px */
+    background:url("/UI/images/bg_bluefade_rightsidebar.jpg") no-repeat top left;
+    padding:12px 10px 0 0;
+    
+}
+    .recipebox #content .benefits h2 {
+        border-bottom:2px solid #c3d2eb;
+        color:#595959;
+        padding-bottom:3px;
+        margin-bottom:8px;
+    }
+    .recipebox .benefits ul li {
+	    padding: 0 0 8px 16px;
+	    background:url(../images/li-arrow-grey-trans.png) no-repeat 2px 4px;
+	    color:#595959;
+	    line-height:1.6em;
+    }
+    .recipebox .benefits img {
+        margin-left:10px;
+    }   
+    body.recipebox #banner img {
+        height:277px;
+        width:950px;
+    }
+    
+    
+/* Contact Us Forms */
+.contactus div.radio label {
+    width:auto;
+    float:none;
+    margin-left:3px;
+    margin-right:20px;
+}
+    .formrow label.toplabel,
+    .contactus .formrow label.toplabel {
+        width:auto;
+        float:none;
+        display:block;
+        margin-bottom:5px;
+    }
+
+
+.contactus .formrow label {
+    width:100px;
+}
+.contactus .introquestions .formrow {
+    margin-left:0;
+    margin-bottom:20px;
+}
+.contactus .introquestions {
+    padding-bottom:10px;
+    border-bottom:2px solid #e5e5e5;
+    margin-bottom:30px;
+    margin-left:10px;
+}
+.formrow input.phonepre,
+.formrow input.phonemid {
+    width:35px;
+}
+.formrow input.phoneend {
+    width:65px;
+}
+.contactus div.submit {
+    margin-bottom:30px;
+}
+.printonly {
+    display:none;
+}
+
+
+
+/*Promotions - Pintastic Holidays 2013*/
+#enter-now-button-call-out{
+    background:url(/UI/images/home/enter-now-bg.png) no-repeat top left;
+    width:126px;
+    height:25px;
+    position:relative;
+    display:inline-block;
+    z-index:5;
+    color:white;
+    font-size:20px;
+    margin:0px auto;
+}
+
+#enter-now-promotions-link{
+    position:relative;
+    display:inline-block;
+    margin-left:5px;
+
+}
+
+
+#button-link-container{
+    position:relative;
+    display:block;
+    width:280px;
+    height:25px;
+    text-align:center;
+    clear:both;
+    margin-top:100px;
+}
+
+
+#button-link-container a:link,#button-link-container a:visited,#button-link-container a:hover,#button-link-container a:active{
+    color:white;
+    text-decoration:underline;
+}
+
+.home-promo-short.left-promo h2{
+    top:100px;
+    left:10px;
+    color:#0a4d8d !important;
+    position:relative;
+    font-size:16px ,medium;
+    font-family:Helvetica;
+    width:210px;
+    height:30px;
+
+}
+
+#enter-now-button-call-out a:link,#enter-now-button-call-out a:visited,#enter-now-button-call-out a:hover,#enter-now-button-call-out a:active{
+width: 126px;
+height: 25px;
+margin: 0 auto;
+color: #fff !important;
+font-size: 13px;
+font-weight:bold;
+overflow:visible;
+left:5px;
+text-align:center;
+text-indent:0;
+line-height:normal;
+font-family:Helvetica;
+text-decoration:none !important;
+text-transform:capitalize !important;
+display: block;
+padding-top:4px;
+
+}
+
+#call-out-text{
+    position:relative;
+    clear:both;
+    font-size:11px;
+    color:white;
+    text-indent:0;
+}
+
+#call-out-text p{
+    position: relative;
+    clear: both;
+    font-size: 11px;
+    color: white;
+    text-indent: 0;
+    margin-top: 5px;
+    top: 95px;
+    left: 10px;
+    width: 240px;
+}
+
+    #call-out-text p a:link {
+    color:#fff !important;
+    text-decoration:underline;
+    }
+
+
+
+/* Promotions - Bake-Off 2009 */
+body.bakeoff2009 #sidebar {
+	display:none;
+}
+body.bakeoff2009 #banner {
+	width: 950px;
+	height: 305px;
+	display: inline-block;
+	background:url(/UI/images/promotions/bakeoff2009/bakeoff2009-bg.jpg) no-repeat top left;
+	position:relative;
+	color:#5A5A5A;
+}
+    body.bakeoff2009 #banner h1,
+    body.bakeoff2009 #banner h2 {
+        text-indent:-9999px;
+    }
+    body.bakeoff2009 #banner .content {
+		position:absolute;
+		top:104px;
+		left:497px;
+		width:370px;
+		font-size:1.4em;
+    }
+		body.bakeoff2009 #banner .content p {
+	        margin-bottom:15px;
+		}
+		body.bakeoff2009 #banner .content #view_recipe {
+	        margin-top: 5px;
+		}
+    body.bakeoff2009 #banner p#recipe-callout {
+        position:absolute;
+        top: 260px;
+        left:200px;
+        font-size:10px;
+		width:210px;
+    }
+		body.bakeoff2009 #banner p#recipe-callout a {
+			color:#5A5A5A;
+			text-decoration:underline;
+		}
+body.bakeoff2009 #content {
+	padding-left:108px;
+	width:775px;
+}
+	body.bakeoff2009 #content h2 {
+        margin:10px 0 18px 7px;
+        color:#7B7B7B;
+        font-weight:normal;
+        font-size:1.3em;
+	}
+	body.bakeoff2009 #content #finalists {
+		
+	}
+		body.bakeoff2009 #content #finalists .row {
+			margin-bottom:15px;
+		}
+			body.bakeoff2009 #content #finalists .row .finalist {
+				float:left;
+				display:inline;
+				width:236px;
+				margin-right:21px;
+			}
+				body.bakeoff2009 #content #finalists .row .finalist p {
+					margin-top:5px;
+				}
+					body.bakeoff2009 #content #finalists .row .finalist p a {
+						color:#AF264B;
+						text-decoration:none;
+					}
+						body.bakeoff2009 #content #finalists .row .finalist p a:hover {
+							text-decoration:underline;
+						}
+	body.bakeoff2009 #content img#view-all-button {
+
+	}
+	body.bakeoff2009 #content img#eligible-products {
+		margin:20px 0 40px 0;
+	}
+body.bakeoff2009 #footer {
+	width: 976;
+	height: 147px;
+	background:transparent url(/UI/images/promotions/bakeoff2009/footer-bg.png) no-repeat 0 -15px;
+}
+
+.espanollink 
+{
+    color:#A30D25;
+    font-size:10px;
+    position:absolute;
+    right:38px;
+    top:68px;
+    
+}
+.espanollink a
+{
+    color:#A30D25;
+    text-decoration:underline;
+} 
+
+#espanollink {
+    color:#A30D25;
+    font-size:10px;
+    position:absolute;
+    right:38px;
+    top:68px;
+    text-decoration:underline;
+}  
+
+/* Ingrid Hoffmann Promotion */
+#ingrids-recipe-box {
+	display:none;
+    width:510px;
+    height:148px;
+    float:left;
+    margin-bottom:22px;
+    padding-top:59px;
+    background:url(/UI/images/ingrids-recipes-bg.jpg) no-repeat 0 0;
+    position:relative;
+}
+body.recipes_landing #ingrids-recipe-box ul.result_matrix.ingrids-recipes {
+    width:482px;
+    margin-bottom:0 !important;
+    padding:0;
+}
+body.recipes_landing #ingrids-recipe-box ul.result_matrix.ingrids-recipes li.recipe {
+    margin-bottom:0;
+}
+body.recipes_landing #ingrids-recipe-box ul.result_matrix.ingrids-recipes li.recipe div.image {
+    background:url("../images/content-recipes-results-img-ingrid-bg.png") no-repeat scroll 0 0 transparent;
+    height:111px;
+    width:108px;
+}
+#ingrids-recipes-content {
+    width:708px;
+    position:relative;
+    padding-top:24px;
+}
+#ingrids-recipes-content .ingrid-recipes-tab {
+    height:47px;
+    width:202px;
+    background:url("../images/ingrids-recipes-tab.gif") no-repeat scroll 0 0 transparent;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#ingrids-recipes-wrapper {
+    width:708px;
+}
+#ingrids-recipes-wrapper .ingrids-recipes-top {
+    width:708px;
+    height:7px;
+    background:url("../images/ingrids-recipes-content-top.gif") no-repeat scroll 0 0 transparent;
+    font-size:0;
+}
+#ingrids-recipes-wrapper .ingrids-recipes-middle {
+    width:680px;
+    background:url("../images/ingrids-recipes-content-middle.gif") repeat-y scroll 0 0 transparent;
+    height:auto;
+    padding:14px;
+}
+#ingrids-recipes-wrapper .ingrids-recipes-bottom {
+    width:708px;
+    height:5px;
+    background:url("../images/ingrids-recipes-content-bottom.gif") no-repeat scroll 0 0 transparent;
+}
+#ingrids-story {
+    width:346px;
+    float:right;
+}
+#ingrids-story .ingrids-story-top {
+    width:346px;
+    height:42px;
+    background:url("../images/ingrids-story-box-top.png") no-repeat scroll 0 0 transparent;
+}
+#ingrids-story  .ingrids-story-middle {
+    width:306px;
+    height:auto;
+    background:url("../images/ingrids-story-box-middle.png") repeat-y scroll 0 0 transparent;
+    padding:0 20px;
+}
+#ingrids-story .ingrids-story-header {
+    font-size:0;
+    width:346px;
+    height:47px;
+    background:url("../images/hdr-ingrids-story-box.png") no-repeat scroll 0 0 transparent;
+
+}
+#ingrids-story  .ingrids-story-middle p {
+    font-size:12px;
+    margin:0;
+    color:#707070;
+    line-height:21px;
+}
+#ingrids-story  .ingrids-story-bottom {
+    width:346px;
+    height:17px;
+    background:url("../images/ingrids-story-box-bottom.png") no-repeat scroll 0 0 transparent;
+}
+#ingrids-recipe-list {
+    width:300px;
+    float:left;
+    display:inline;
+}
+.ingrids-recipe {
+    display:inline-block;
+    float:left;
+    font-size:0.8em;
+    height:auto;
+    margin-bottom:11px;
+    margin-top:5px;
+    *margin-bottom:5px;
+    padding:0;
+    width:300px;
+}
+.ingrids-recipe ul li {
+    font-size:11px;
+}
+.ingrids-recipe.first {
+    margin-top:20px;
+}
+.ingrids-recipe div.image {
+    background:url("../images/content-recipes-results-img-ingrid-bg.png") no-repeat scroll 0 0 transparent;
+    float:left;
+    height:111px;
+    margin-right:10px;
+    padding:5px 0 0 8px;
+    width:108px;
+}
+.ingrids-recipe dt {
+    color:#000000;
+    font-size:1.5em;
+    line-height:1.2em;
+    padding-bottom:0.3em;
+}
+.ingrids-recipe dd {
+    line-height:1.2em;
+    padding-left:0;
+}
+
+
+#ingrids-tips-wrapper {
+    width:338px;
+    float:left;
+}
+    
+#ingrids-tips-wrapper .ingrids-tips-top {
+    width:338px;
+    height:47px;
+    background:url("../images/ingrids-tips-box-top.gif") no-repeat scroll 0 0 transparent;
+}
+          
+#ingrids-tips-wrapper .ingrids-tips-middle {
+     width:318px;
+     height:auto;
+     background:url("../images/ingrids-tips-box-middle.gif") repeat-y scroll 0 0 transparent;
+     padding:5px 10px 1px 10px;
+}
+          
+#ingrids-tips-wrapper .ingrids-tips-bottom {
+     width:338px;
+     height:5px;
+     background:url("../images/ingrids-tips-box-bottom.gif") no-repeat scroll 0 0 transparent;
+     font-size:0;
+}
+#content div#expansion_list.ingrids-tips dl {
+    margin:0;
+    padding:0;
+    width:318px;
+    border-top:1px solid #d7d5d2;
+}
+#content div#expansion_list.ingrids-tips dl.first {
+    border:0;
+}
+#content div#expansion_list.ingrids-tips dl dd {
+    background:none;
+    margin:0;
+    padding-left:13px;
+}
+#content div#expansion_list.ingrids-tips dl dt.ui-state-active {
+    background:transparent url("/UI/images/ingrid_reveal_open.gif") no-repeat scroll left top;
+    margin:0;
+    font-weight:bold;
+}
+#content div#expansion_list.ingrids-tips dl dt {
+    background: transparent url("/UI/images/ingrid_reveal_closed.gif") no-repeat scroll left top;
+    margin:0;
+    padding-left:13px;
+    font-weight:normal;
+}
+#content div#expansion_list.ingrids-tips {
+    margin:0;
+}
+#content div#expansion_list.ingrids-tips p{
+    line-height:1.6em;
+}
+#ingrids-tips-right-column {
+    float:right;
+    padding-right:12px
+}
+#ingrids-video-wrapper {
+    width:347px;
+    margin-bottom:6px;
+}
+#ingrids-video-wrapper .ingrids-video-top {
+    width:347px;
+    height:52px;
+    background:url("/UI/images/ingrid-video-box-top.png") no-repeat scroll 0 0 transparent;
+}     
+#ingrids-video-wrapper .ingrids-video-middle {
+    height:auto;
+    background:url("/UI/images/ingrid-video-box-middle.png") repeat-y scroll 0 0 transparent;
+    padding:3px 14px 1px;
+    width:321px;
+}        
+#ingrids-video-wrapper .ingrids-video-bottom {
+     width:347px;
+     height:17px;
+     background:url("/UI/images/ingrid-video-box-bottom.png") no-repeat scroll 0 0 transparent;
+     font-size:0;
+}
+
+/* Site Map styles */
+body.sitemap #content .sitemap_column {
+    float:left;
+    width:182px;
+    margin:0 25px 0 10px;
+    _margin-left:5px;
+    padding:0;
+}
+    body.sitemap #content .sitemap_column h2 {
+        color:#004b8d;
+        border-bottom:2px solid #c6ddec;
+        margin:0 0 5px 0;
+        padding:0 0 6px 0;
+    }
+        body.sitemap #content .sitemap_column h2 a:link,
+        body.sitemap #content .sitemap_column h2 a:visited {
+            color:#004b8d;
+        }
+    body.sitemap #content .sitemap_column h2.no-sub-pages {
+        border-bottom:none;
+    }    
+    body.sitemap #content .sitemap_column ul {
+        margin:0 0 25px 0; 
+      }
+    body.sitemap #content .sitemap_column ul li {
+        line-height:1.5em;
+    }
+    
+    
+    
+a.see-all{
+    background:url("/UI/images/right-arrow.gif") no-repeat scroll right 0.4em transparent;
+    line-height:20px;
+    padding-right:16px;
+    position:absolute;
+    right:30px;
+    bottom:8px;
+}
+
+
+/* Promotions - Bake-Off 2011 */
+body.bakeoff2011 #sidebar,
+body.bakeoff2011 #gsa-search {
+	display:none;
+}
+body.bakeoff2011 a {
+	color:#258CD4;
+}
+	body.bakeoff2011 a:hover {
+		color:#a30d25;
+	}
+body.bakeoff2011 #banner {
+	width: 950px;
+	height: 304px;
+	display: inline-block;
+	background:url(/UI/images/promotions/bakeoff2011/banner-bg.jpg) no-repeat top left;
+	position:relative;
+	color:#333333;
+	font-family:verdana;	
+}
+	body.bakeoff2011 #banner img#logo {
+		position:absolute;
+		top:38px;
+		left:218px;
+	}
+    body.bakeoff2011 #banner h1 {
+        text-indent:-9999px;
+    }
+    body.bakeoff2011 #banner #header-content {
+		position:absolute;
+		top:100px;
+		left:441px;
+		width:500px;
+		font-size:12px;
+    }
+		body.bakeoff2011 #banner #header-content h2 {
+			text-indent:-9999px;
+			background:url(/UI/images/promotions/bakeoff2011/h2-finalists.jpg) no-repeat top left;
+			width:403px;
+			height:47px;
+			margin:0;
+			padding:0;
+		}
+		body.bakeoff2011 #banner #header-content p.subhead {
+			text-indent:-9999px;
+			background:url(/UI/images/promotions/bakeoff2011/subhead.jpg) no-repeat top left;
+			width:362px;
+			height:51px;
+			margin:0 0 8px 0;
+		}
+		body.bakeoff2011 #banner #header-content a {
+			font-weight:bold;
+		}
+		body.bakeoff2011 #banner #header-content p {
+			line-height:1.5em;
+			margin:13px 0 0 0;
+			padding:0;
+			width:468px;
+			padding:0;
+			position:relative;
+		}
+		body.bakeoff2011 #banner #header-content a#btn-visit {
+			display:inline-block;
+			width:138px;
+			height:24px;
+			text-indent:-9999px;
+			background:url(/UI/images/promotions/bakeoff2011/btn-visit.gif) no-repeat top left;
+			position:absolute;
+			top:-2px;
+			left:99px;
+		}
+    body.bakeoff2011 #banner p#recipe-callout {
+        position:absolute;
+        bottom:7px;
+        left:8px;
+        font-size:10px;
+    }
+		body.bakeoff2011 #banner p#recipe-callout a {
+			font-weight:bold;
+		}
+			body.bakeoff2011 #banner p#recipe-callout a:hover {
+				text-decoration:underline;
+			}
+body.bakeoff2011 #content {
+	padding:0 25px 0 27px;
+	width:897px;
+	font-family:arial;
+}
+    body.bakeoff2011 #content p {
+		margin:0;
+		width:770px;
+		margin-left:15px;
+    }
+    body.bakeoff2011 #content h2 {
+		font-size:24px;
+        margin:18px 0 8px 0;
+        padding:0 0 6px 0;
+        border-bottom:#004990 2px solid;
+        font-weight:normal;
+    }
+    body.bakeoff2011 #content p#details {
+		font-weight:bold;
+		margin:14px 0 7px 0;
+    }
+    body.bakeoff2011 #content p.award {
+		width:750px;
+    }
+	body.bakeoff2011 #content h3 {
+		font-size:20px;
+		margin:28px 0 5px 0;
+		font-weight:normal;
+		padding-bottom:5px;
+		border-bottom:#004990 2px solid;
+		width:898px;
+	}
+		body.bakeoff2011 #content h3.award {
+			border-bottom:none;
+		}
+    body.bakeoff2011 #content #winning-recipes {
+        position:relative;
+        z-index:10;
+        font-family:arial,verdana,sans-serif;
+        font-size:12px;
+        color:#5A5A5A;
+        margin:14px 0 0 -3px;
+    }
+        body.bakeoff2011 #content #winning-recipes .winning-recipe {
+            float:left;
+            display:inline;
+            width:229px;
+            margin-left:28px;
+        }
+            body.bakeoff2011 #content #winning-recipes .first-winning-recipe {
+                margin-left:0;
+            }
+        body.bakeoff2011 #content #winning-recipes a.recipe-img {
+        	background:url(/UI/images/promotions/bakeoff2011/recipe-img-border.jpg) no-repeat top left;
+        	margin-bottom:3px;
+        	padding:9px 0 0 8px;
+        	width:228px;
+        	height:227px;
+        	display:block;
+        }
+        body.bakeoff2011 #content #winning-recipes p.recipe-text {
+            display:block;
+            margin-left:8px;
+            width:218px;
+            font-size:12px;
+        }
+        body.bakeoff2011 #content #winning-recipes .last-winning-recipe p.recipe-text {
+            width:240px;
+        }
+    body.bakeoff2011 #content #btn-view-all {
+		background:url(/UI/images/promotions/bakeoff2011/btn-view-all.gif) no-repeat left top;
+		width:148px;
+		height:24px;
+		display:block;
+		text-indent:-9999px;
+		margin:19px 0 40px 0;
+    }
+    body.bakeoff2011 #content #featured-recipes {
+    
+    }
+		body.bakeoff2011 #content #featured-recipes ul {
+			float:left;
+			display:inline;
+			width:369px;
+			margin:8px 0 0 0;
+			padding:0;
+		}
+			body.bakeoff2011 #content #featured-recipes ul li {
+				list-style-type:none;
+				margin:0 0 5px 0;
+				padding:0;
+			}
+    body.bakeoff2011 #content #eligible-products {
+        margin:43px 0 0 0;
+    }
+        body.bakeoff2011 #content #eligible-products p {
+			float:left;
+			display:inline;
+			width:210px;
+			margin:3px 12px 0 0;
+			font-size:11px;
+        }
+        body.bakeoff2011 #content #eligible-products #logos {
+        	float:left;
+        	display:inline;
+        }
+            body.bakeoff2011 #content #eligible-products #logos img {
+                float:left;
+                display:inline;
+                margin-right:9px;
+            }
+                body.bakeoff2011 #content #eligible-products #logos img#pillsbury {
+                    margin-right:9px;
+                }
+                body.bakeoff2011 #content #eligible-products #logos img#jif {
+                    margin-right:10px;
+                }
+                body.bakeoff2011 #content #eligible-products #logos img#crisco {
+                    margin-right:7px;
+                }
+                body.bakeoff2011 #content #eligible-products #logos img#smuckers {
+                    margin-right:8px;
+                }
+    body.bakeoff2011 #content p#visit {
+        margin:17px 0 10px 0;
+    }
+
+body.home #footer,
+body.bakeoff2011 #footer {
+	height: 145px;
+	background:transparent url(/UI/images/footer-bg.png) no-repeat 0 -15px;
+}
+
+body.home #footer #disclosure,
+body.bakeoff2011 #footer #disclosure {
+	padding-top:26px;
+	margin-bottom:29px;
+}
+*+html body.home #footer #disclosure,
+*+html body.bakeoff2011 #footer #disclosure {
+	padding-top:9px;
+	margin-bottom:29px;
+}
+
+#home-promos-like 
+{
+    margin:8px 0 15px 0;
+    width:959px;
+    padding:0;
+    /*background:url(/images/bg_home_like.jpg) no-repeat 0 0;*/
+}
+#two-column-promo-wrapper {
+    width:604px;
+    _width:602px;
+    float:left;
+    height:452px;
+    padding:0;
+    margin:0;
+}
+.home-promo-short {
+    float:left;
+    width: 282px;
+	height: 218px;
+	position:relative;
+	_margin-top:13px;
+}
+.home-promo-short.left-promo {
+	margin: 0 23px 17px 0;
+}
+.home-promo-short.middle-promo {
+	margin: 0 0 17px 0;
+}
+.home-promo-short .cta {
+    width: 282px;
+	height: 218px;
+}
+.home-promo-right {
+    float:left;
+    width: 305px;
+    height: 274px;
+    padding: 0;
+    margin: 0;
+}
+.strong
+{
+	font-weight:bold;
+}
+.fonterror
+{
+	font-size: 12px;
+	margin-top:-6px;
+}
+.formrow input.text
+{
+	margin-top:2px;
+	margin-bottom:2px;
+}
+.recipeboxregister .indented {
+    margin-left:115px;
+    position: relative;
+    top: -4px;
+}
+.stronglabel label
+{
+    font-weight:bold;
+}
+.specialnote
+{
+    width: 425px;
+}
+.margintop
+{
+    margin-top:25px;
+}
+.passwordescription
+{
+    font-size: 12px;
+    height: 35px; 
+    padding-bottom: 2px;
+}
+.confirmpassup
+{
+    margin-top:-10px !important;
+}
+.textboxNewsletter
+{
+    width:200px;
+    margin-left: -34px;
+}
+.indentednews{
+    margin-left:71px;
+    position: relative;
+    top: -8px;
+}
+.indentedoptout{
+    margin-left:71px;
+        
+}
+.recipeboxnewsletter .indented {
+    margin-left:115px;
+}
+.alreadyNews  {
+    float: right;
+    position: relative;
+    top: -5px;
+    width: 95px;
+    *top: -27px;
+    right: 20px;
+}
+.margintop30
+{
+    margin-top:30px;
+}
+.widthLeft
+{
+    float:left;
+    width:420px;    
+}
+.widthRight
+{
+    float:left;
+    width:190px;
+    padding:20px;
+    margin-left:20px;
+    border: 1px solid #ececec;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#F8EDD4));
+    background: -webkit-linear-gradient(#ffffff, #F8EDD4);
+    background: -moz-linear-gradient(#ffffff, #F8EDD4);
+    background: -ms-linear-gradient(#ffffff, #F8EDD4);
+    background: -o-linear-gradient(#ffffff, #F8EDD4);
+    background: linear-gradient(#ffffff, #F8EDD4);
+    -pie-background: linear-gradient(#ffffff, #F8EDD4);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    behavior: url(/UI/scripts/PIE.htc);
+    z-index: 500;        
+    position: relative;
+}
+.yellowline
+{
+    border-top: 2px solid yellow;
+}
+.margintop10
+{
+    margin-top: 10px;
+    font-size: 12px;
+}
+.aligncenter
+{
+    margin: 0 auto;
+    text-align: center;
+}
+.widthRight h2
+{
+    font-size: 18px !important;
+    font-weight: 300 !important;
+}
+.widthlabel label
+{
+    display: inline-block;
+    width: 65px;
+}
+.textboxright
+{
+    margin: 4px 0;
+    width:105px;
+}
+.fontfami
+{
+    font-size:12px;
+}
+.indentedright
+{
+    padding-left:68px;
+    font-size:12px;
+}
+.checkbox .margincheck
+{
+    margin-left:22px;
+}
+.alignforgotbtn
+{
+    padding-left:115px;
+}
+.recipeboxnewsletter .formrow 
+{
+    *position:relative;
+    *height:28px;
+}
+    .errorpart
+{
+    margin-bottom:6px;
+}
+.errorparts
+{
+    margin-bottom: 7px !important;
+    top: -4px !important;
+}
+    
+.resetpass .formrow label {
+    width: 115px;
+}
+.resetpass .indented {
+    margin-left:130px;
+    position: relative;
+    top: -4px;
+}
+.resetpass .indented_btn {
+    margin-left:115px !important;
+
+}
+.marginleft
+{
+    margin-left:15px;
+}
+.contact_spr .indented 
+{
+    margin-left:126px;
+    position: relative;
+    top: -4px;
+}
+.contact_spr .indentedcheck 
+{
+    margin-left: 10px;
+    position: relative;
+    top: -10px;
+}
+.contact_spr .indentedselect 
+{
+    margin-bottom: 5px;
+margin-left: 112px;
+position: relative;
+top: 10px;
+}
+.contact_spr .indentedselectbirth 
+{
+    margin-left: 126px;
+position: relative;
+top: 0;
+}
+.correctcheck
+{
+    position:relative;
+    top:-18px;
+    width:400px;
+}
+.general-select
+{
+    display:inline;
+}
+.selectLeft
+{
+    float:left;
+    width:360px;
+    display:block;
+}
+.selectRight
+{
+    float:left;
+    width:260px;
+    display:block;
+}
+
+#customError-container 
+{
+
+    position: relative;
+	width: 950px;
+	height: 356px;
+    
+}
