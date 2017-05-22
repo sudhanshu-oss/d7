@@ -1,0 +1,87 @@
+ew->name = 'oneindia';
+$view->description = '';
+$view->tag = 'default';
+$view->base_table = 'node';
+$view->human_name = 'oneIndia';
+$view->core = 7;
+$view->api_version = '3.0';
+$view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+/* Display: Master */
+$handler = $view->new_display('default', 'Master', 'default');
+$handler->display->display_options['title'] = 'oneIndia';
+$handler->display->display_options['use_more_always'] = FALSE;
+$handler->display->display_options['access']['type'] = 'perm';
+$handler->display->display_options['cache']['type'] = 'none';
+$handler->display->display_options['query']['type'] = 'views_query';
+$handler->display->display_options['exposed_form']['type'] = 'basic';
+$handler->display->display_options['pager']['type'] = 'full';
+$handler->display->display_options['pager']['options']['items_per_page'] = '0';
+$handler->display->display_options['pager']['options']['offset'] = '0';
+$handler->display->display_options['pager']['options']['id'] = '0';
+$handler->display->display_options['pager']['options']['quantity'] = '9';
+$handler->display->display_options['style_plugin'] = 'views_json';
+/* Field: Content: Title */
+$handler->display->display_options['fields']['title']['id'] = 'title';
+$handler->display->display_options['fields']['title']['table'] = 'node';
+$handler->display->display_options['fields']['title']['field'] = 'title';
+$handler->display->display_options['fields']['title']['label'] = '';
+$handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+$handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+/* Field: Content: Description */
+$handler->display->display_options['fields']['field_feed_item_description']['id'] = 'field_feed_item_description';
+$handler->display->display_options['fields']['field_feed_item_description']['table'] = 'field_data_field_feed_item_description';
+$handler->display->display_options['fields']['field_feed_item_description']['field'] = 'field_feed_item_description';
+/* Field: Content: image_link */
+$handler->display->display_options['fields']['field_image_link']['id'] = 'field_image_link';
+$handler->display->display_options['fields']['field_image_link']['table'] = 'field_data_field_image_link';
+$handler->display->display_options['fields']['field_image_link']['field'] = 'field_image_link';
+/* Field: Content: detail_link */
+$handler->display->display_options['fields']['field_detail_link']['id'] = 'field_detail_link';
+$handler->display->display_options['fields']['field_detail_link']['table'] = 'field_data_field_detail_link';
+$handler->display->display_options['fields']['field_detail_link']['field'] = 'field_detail_link';
+/* Filter criterion: Content: Published */
+$handler->display->display_options['filters']['status']['id'] = 'status';
+$handler->display->display_options['filters']['status']['table'] = 'node';
+$handler->display->display_options['filters']['status']['field'] = 'status';
+$handler->display->display_options['filters']['status']['value'] = 1;
+$handler->display->display_options['filters']['status']['group'] = 1;
+$handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+/* Filter criterion: Content: Type */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'feed_item' => 'feed_item',
+);
+
+/* Display: oneindiaPage */
+$handler = $view->new_display('page', 'oneindiaPage', 'page');
+$handler->display->display_options['defaults']['sorts'] = FALSE;
+/* Sort criterion: Content: Updated date */
+$handler->display->display_options['sorts']['changed']['id'] = 'changed';
+$handler->display->display_options['sorts']['changed']['table'] = 'node';
+$handler->display->display_options['sorts']['changed']['field'] = 'changed';
+$handler->display->display_options['sorts']['changed']['order'] = 'DESC';
+$handler->display->display_options['path'] = 'oneindiapage';
+
+/* Display: Services */
+$handler = $view->new_display('services', 'Services', 'services_1');
+$handler->display->display_options['defaults']['style_plugin'] = FALSE;
+$handler->display->display_options['style_plugin'] = 'views_json';
+$handler->display->display_options['style_options']['plaintext_output'] = 1;
+$handler->display->display_options['style_options']['remove_newlines'] = 0;
+$handler->display->display_options['style_options']['jsonp_prefix'] = '';
+$handler->display->display_options['style_options']['using_views_api_mode'] = 0;
+$handler->display->display_options['style_options']['object_arrays'] = 0;
+$handler->display->display_options['style_options']['numeric_strings'] = 0;
+$handler->display->display_options['style_options']['bigint_string'] = 0;
+$handler->display->display_options['style_options']['pretty_print'] = 0;
+$handler->display->display_options['style_options']['unescaped_slashes'] = 0;
+$handler->display->display_options['style_options']['unescaped_unicode'] = 0;
+$handler->display->display_options['style_options']['char_encoding'] = array();
+$handler->display->display_options['defaults']['style_options'] = FALSE;
+$handler->display->display_options['defaults']['row_plugin'] = FALSE;
+$handler->display->display_options['defaults']['row_options'] = FALSE;
+$handler->display->display_options['path'] = 'oneindia';
+
